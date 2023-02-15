@@ -5,3 +5,67 @@
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+  html, body {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .header {
+    background: url(../images/header__bg.jpg) no-repeat;
+    width: 1920px;
+    height: 1573px;
+  }
+  .header__header {
+    width: 1751px;
+    height: 25px;
+    margin: 64px 84px 0px 85px;
+  }
+  .flex {
+    display: flex;
+  }
+  /* .header__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  } */
+  .logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .header__logo {
+
+  }
+  .menu {
+    margin-left: 606px;
+    margin-right: 613px;
+
+
+  }
+  .header__menu {
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-right: 50px;
+  }
+  .header__menu_width {
+    width: 78px;
+  }
+
+  .search {
+    opacity: 0.6;
+
+  }
+  .icon {
+  }
+  .header__icon {
+    margin-right: 17px;
+  }
+  .header__search {
+    width: 88px;
+    height: 23px;
+    background-color: #b1b1b1;
+    border: 0;
+  }

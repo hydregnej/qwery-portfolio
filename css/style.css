@@ -7,32 +7,36 @@
   }
 
   html, body {
-
+    color: #FFFFFF;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    width: 1920px;
+    height: 5448px;
   }
 
-  .header {
-    background: url(../images/header__bg.jpg) no-repeat;
-    width: 1920px;
-    height: 1573px;
-  }
-  .header__header {
-    width: 1751px;
-    height: 25px;
-    margin: 64px 84px 0px 85px;
-    align-items: center;
-    justify-content: space-between;
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
   }
-  /* .header__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  } */
+
+  .header {
+    background: url(../images/header__bg.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    height: 1920px;
+  }
+  .header__line {
+    padding-top: 64px;
+    margin: 0px 84px 0px 85px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
   .logo {
     color: #FFFFFF;
     font-weight: bold;
@@ -41,16 +45,19 @@
   .header__logo {
 
   }
-  /* .menu {
-    margin-left: 553px;
-    margin-right: 595px;
+  .menu {
 
+  }
 
-  } */
   .header__menu {
-    color: #FFFFFF;
+    color: #b1b1b1;
     font-weight: 600;
     margin-right: 50px;
+    transition: color 0.3s linear;
+  }
+
+  .header__menu:hover {
+    color: #FFFFFF;
   }
 
   .search {
@@ -68,3 +75,113 @@
     background-color: #b1b1b1;
     border: 0;
   }
+
+
+.header-down {
+  margin-left: 79px;
+  margin-top:  270px;
+  
+}
+
+.header-down__social {
+}
+.header-down__social-content {
+  writing-mode: vertical-lr;
+  font-weight: 600;
+}
+.social__content {
+  writing-mode: horizontal-tb;
+}
+.header-down_item {
+  margin-bottom: 20px;
+}
+.social__img_instagram {
+}
+.social__img_twitter {
+}
+.social__img_facebook {
+}
+
+.header-down__header-content {
+  margin-left: 396px;
+}
+.header-down__title {
+  margin-left: 104px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #FFC178;
+  margin-bottom: 32px;
+  letter-spacing: 6px;
+}
+.header-down__title:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 72px;
+  background-color: #FFC178;
+  top: 365px;
+  left: 498px;
+}
+.header-down__title_down span {
+  font-weight: 800;
+  font-size: 96px;
+}
+.header-down__title_down h1 {
+  font-size: 88px;
+}
+
+.scroll-down {
+  position: absolute;
+  width: 126px;
+  height: 26px;
+}
+.header__scroll-btn_title::before {
+  position: absolute;
+  content: "Scroll down";
+  animation: move-down 2s infinite;
+  margin: auto;
+  left: -5px;
+  top: -3px;
+  height: 30px;
+  width: 130px;
+  color: rgba(255, 255, 255, 0.644);
+  
+}
+.header__arrow-scroll::before {
+  position: absolute;
+  content: url(../icons/scroll-down.svg);
+  animation: move-down-anim 2s infinite;
+  margin: auto;
+  left: 111px;
+  top: -13px;
+  height: 30px;
+  width: 130px;
+  color: rgba(255, 255, 255, 0.644);
+
+}
+
+@keyframes move-down {
+  80%{
+      opacity: 0.5;
+  }
+}
+@keyframes move-down-anim {
+  80%{
+    opacity: 0.5;
+}
+  100% {
+    transform: translateY(0.5em);
+  }
+}
+.header__scroll-down {
+  margin-left: 818px;
+  margin-top: 384px;
+}
+.header__scroll-btn_title {
+  margin-right: 6px;
+} 
+.scroll-btn {
+}
+.header__scroll-btn {
+  color: #FFFFFF;
+}

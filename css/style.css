@@ -23,6 +23,8 @@
     width: 1751px;
     height: 25px;
     margin: 64px 84px 0px 85px;
+    align-items: center;
+    justify-content: space-between;
   }
   .flex {
     display: flex;
@@ -39,19 +41,16 @@
   .header__logo {
 
   }
-  .menu {
-    margin-left: 606px;
-    margin-right: 613px;
+  /* .menu {
+    margin-left: 553px;
+    margin-right: 595px;
 
 
-  }
+  } */
   .header__menu {
     color: #FFFFFF;
     font-weight: 600;
     margin-right: 50px;
-  }
-  .header__menu_width {
-    width: 78px;
   }
 
   .search {
